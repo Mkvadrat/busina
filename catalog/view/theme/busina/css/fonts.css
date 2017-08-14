@@ -1,0 +1,7 @@
+/* font-family: "MyriadProRegularorpheus"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
