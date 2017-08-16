@@ -86,7 +86,7 @@
 <?php } ?>
 </head>
     <!-- start header -->
-    <header class="header">
+    <!--<header class="header">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -136,6 +136,76 @@
                 <div class="bottom-line-header">
                     <?php echo $search; ?>
                     
+                    <div class="col-md-6">
+                        <div class="personal-area-block">
+                            <?php if ($logged) { ?>
+                                <p>Здравствуйте <?php echo $user_name; ?>, здесь Вы можете войти в <a href="<?php echo $account; ?>"><?php echo $text_account; ?></a> | <a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></p>
+                            <?php }else{ ?>
+                                <p>
+                                    Личный кабинет <a href="<?php echo $login; ?>">Войти</a> или <a href="<?php echo $register; ?>">Зарегистрироваться</a>
+                                </p>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <?php echo $cart; ?>
+                </div>
+            </div>
+        </div>
+    </header>-->
+    <!-- end header -->
+    
+    <!-- start header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <a href="<?php echo $home; ?>">
+                            <?php if ($logo) { ?>
+                                <h1><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></h1>
+                            <?php } else { ?>
+                                <h1><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></h1>
+                            <?php } ?>
+                        </a>
+                    </div>
+
+                    <div class="mail">
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="email:<?php echo $email; ?>"><?php echo $email; ?></a></p>
+                        <p><i class="fa fa-skype" aria-hidden="true"></i><a href="skype:<?php echo $skype; ?>"><?php echo $skype; ?></a></p>
+                    </div>
+
+                    <div class="phones">
+                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:<?php echo $telephone; ?>"><?php echo $telephone; ?></a></p>
+                        <p><a href="tel:<?php echo $fax; ?>"><?php echo $fax; ?></a></p>
+                    </div>
+
+                    <ul class="top-menu">
+                        <li><a href="<?php echo $novelties; ?>">Новинки</a></li>
+                        <li><a href="<?php echo $special; ?>">Распродажа</a></li>
+                        <li><a href="<?php echo $guarantees; ?>">Наши гарантии</a></li>
+                        <li><a href="<?php echo $refund; ?>">Обмен и возврат</a></li>
+                        <li><a href="<?php echo $about; ?>">О магазине</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 pad-none">
+                    <div class="block-main-menu">
+                        <ul class="main-menu">
+                            <li><a href="<?php echo $catalog; ?>">Каталог</a></li>
+                            <li><a href="<?php echo $payment_delivery; ?>">Оплата и доставка</a></li>
+                            <li><a href="<?php echo $wholesalers; ?>">Оптовикам</a></li>
+                            <li><a href="<?php echo $news; ?>">Скидки и акции</a></li>
+                            <li><a href="<?php echo $posts; ?>">Статьи, мастер-классы</a></li>
+                            <li><a href="<?php echo $contact; ?>">Контакты</a></li>
+                            <li><a href="<?php echo $testimonial; ?>">Отзывы</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom-line-header">
+                    <div class="col-md-3 pad-none-left">
+                        <?php echo $search; ?>
+                    </div>
                     <div class="col-md-6">
                         <div class="personal-area-block">
                             <?php if ($logged) { ?>

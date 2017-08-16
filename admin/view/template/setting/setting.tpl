@@ -271,8 +271,6 @@
                   </div>
                   <?php } ?>
                 </div>
-                
-                
             </div>
                  
             <div class="tab-pane" id="tab-local">

@@ -35,19 +35,21 @@ class ControllerCommonHeader extends Controller {
 		$data['lang'] = $this->language->get('code');
 		$data['direction'] = $this->language->get('direction');
 		$data['user_name'] = $this->customer->getFirstName();
-
+			
 		if (is_file(DIR_IMAGE . $this->config->get('config_logo'))) {
 			$data['logo'] = $server . 'image/' . $this->config->get('config_logo');
 		} else {
-			$data['logo'] = '';
+			$data['logo'] = $server . 'image/empty-logo.png';
 		}
+		
+		$data['name'] = $this->config->get('config_name');
 
 		$this->load->language('common/header');
 		$data['og_url'] = (isset($this->request->server['HTTPS']) ? HTTPS_SERVER : HTTP_SERVER) . substr($this->request->server['REQUEST_URI'], 1, (strlen($this->request->server['REQUEST_URI'])-1));
 		$data['og_image'] = $this->document->getOgImage();
 
 		$data['text_home'] = $this->language->get('text_home');
-
+		
 		// Wishlist
 		if ($this->customer->isLogged()) {
 			$this->load->model('account/wishlist');
