@@ -804,14 +804,14 @@ p {
   transition: 0.5s;
 }
 
-.header .top-menu li:first-child a {
+/*.header .top-menu li:first-child a {
   background-color: #0317aa;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ef0e39), to(#65126d));
   background-image: -webkit-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
   background-image: -o-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
   background-image: linear-gradient(to top, #ef0e39 0%, #65126d 100%);
   color: #FFF;
-}
+}*/
 
 .header .block-main-menu {
   background-color: #0317aa;
@@ -1604,4 +1604,18 @@ p {
   margin-top: 10px;
   padding-top: 20px;
   border-top: 1px solid #e0e0e0;
+}
+
+/*Изменения 16.08.2017*/
+.active {
+  background-color: #0317aa;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ef0e39), to(#65126d));
+  background-image: -webkit-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
+  background-image: -o-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
+  background-image: linear-gradient(to top, #ef0e39 0%, #65126d 100%);
+  color: #FFF !important;
+}
+
+.active-main{
+  text-decoration: underline;
 }

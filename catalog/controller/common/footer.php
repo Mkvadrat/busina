@@ -49,7 +49,7 @@ class ControllerCommonFooter extends Controller {
 		$data['email'] = $this->config->get('config_email');
 		$data['skype'] = $this->config->get('config_skype');
 		$data['novelties'] = $this->url->link('product/category&path=59', '', 'SSL');
-		$data['special'] = $this->url->link('product/special', '', 'SSL');
+		$data['special'] = $this->url->link('product/category&path=61', '', 'SSL');
 		$data['guarantees'] = $this->url->link('information/information&information_id=7', '', 'SSL');
 		$data['refund'] = $this->url->link('information/information&information_id=8', '', 'SSL');
 		$data['about'] = $this->url->link('information/information&information_id=9', '', 'SSL');
