@@ -54,38 +54,40 @@ class ControllerModuleBusina extends Controller {
 
 		$data['categories'] = array();
 		
+		$data['catalog'] = array();
+		
 		$data['main_categories'] = array();
 
-		$categories = $this->model_catalog_category->getCategories(60);
+		$all_categories = $this->model_catalog_category->getCategories(0);
+		
+		$catalog = $this->model_catalog_category->getCategories(60);
 		
 		$main_categories = $this->model_catalog_category->getCategories(60);
 
-		foreach ($categories as $category) {
-			$children_data = array();
-
-			if ($category['category_id'] == $data['category_id']) {
-				$children = $this->model_catalog_category->getCategories($category['category_id']);
-
-				foreach($children as $child) {
-					$filter_data = array('filter_category_id' => $child['category_id'], 'filter_sub_category' => true);
-
-					$children_data[] = array(
-						'category_id' => $child['category_id'],
-						'name' => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-						'href' => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
-					);
-				}
+		foreach ($all_categories as $category) {
+			if($category['category_id'] != 60){	
+				$filter_data = array(
+					'filter_category_id'  => $category['category_id'],
+					'filter_sub_category' => true
+				);
+	
+				$data['categories'][] = array(
+					'category_id' => $category['category_id'],
+					'name'        => $category['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+					'href'        => $this->url->link('product/category', 'path=' . $category['category_id'])
+				);
 			}
-
+		}
+		
+		foreach ($catalog as $category) {
 			$filter_data = array(
 				'filter_category_id'  => $category['category_id'],
 				'filter_sub_category' => true
 			);
 
-			$data['categories'][] = array(
+			$data['catalog'][] = array(
 				'category_id' => $category['category_id'],
 				'name'        => $category['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-				'children'    => $children_data,
 				'href'        => $this->url->link('product/category', 'path=' . $category['category_id'])
 			);
 		}
@@ -98,7 +100,6 @@ class ControllerModuleBusina extends Controller {
 			}
 			
 			$data['main_categories'][] = array(
-				'category_id' => $main['category_id'],
 				'image'		 => $image,
 				'name'        => $main['name'],
 				'href'        => $this->url->link('product/category', 'path=' . $main['category_id'])

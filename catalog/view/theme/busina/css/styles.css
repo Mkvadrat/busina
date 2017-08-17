@@ -1619,3 +1619,15 @@ p {
 .active-main{
   text-decoration: underline;
 }
+
+.active-category{
+  text-decoration: underline;
+}
+
+.paggination-list li .active-pagination{
+  color: #000;
+}
+
+.add-to-cart{
+  cursor: pointer;
+}
