@@ -250,6 +250,14 @@ class ControllerExtensionNews extends Controller {
 			$data['keyword'] = '';
 		}
 		
+		if (isset($this->request->post['date_ended'])) {
+			$data['date_ended'] = $this->request->post['date_ended'];
+		} elseif (!empty($news)) {
+			$data['date_ended'] = ($news['date_ended'] != '0000-00-00') ? $news['date_ended'] : '';
+		} else {
+			$data['date_ended'] = date('Y-m-d');
+		}
+				
 		if (isset($this->request->post['status'])) {
 			$data['status'] = $this->request->post['status'];
 		} elseif (!empty($news)) {

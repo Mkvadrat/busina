@@ -67,6 +67,16 @@
 			  <input type="text" name="keyword" value="<?php echo $keyword; ?>" placeholder="<?php echo $text_keyword; ?>" id="input-keyword" class="form-control" />
 			</div>
 		  </div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="input-date-ended">Дата окончания</label>
+				<div class="col-sm-3">
+					<div class="input-group date">
+						<input type="text" name="date_ended" value="<?php echo $date_ended; ?>" placeholder="Дата окончания" data-date-format="YYYY-MM-DD" id="input-date-ended" class="form-control" />
+						<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+						</span></div>
+				</div>
+			</div>
 		  <div class="form-group">
 			<label class="col-sm-2 control-label" for="input-status"><?php echo $text_status; ?></label>
 			<div class="col-sm-10">
@@ -93,4 +103,11 @@ $('#language a:first').tab('show');
 $('#input-description<?php echo $language['language_id']; ?>').summernote({height: 300});
 <?php } ?>
 </script>
+  
+<script type="text/javascript"><!--
+$('.date').datetimepicker({
+	pickTime: false
+});
+//--></script>
+	
 <?php echo $footer; ?>

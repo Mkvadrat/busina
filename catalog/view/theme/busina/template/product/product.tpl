@@ -11,6 +11,8 @@
                 </div>
                 <div class="col-md-9">
                     <article>
+                        <div id="info"></div>
+                        
                         <h1 class="title-section info"><?php echo $heading_title; ?></h1>
                         
                         <div class="short-description">

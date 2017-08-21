@@ -94,6 +94,17 @@ class ControllerInformationContact extends Controller {
 		$data['fax'] = $this->config->get('config_fax');
 		$data['open'] = nl2br($this->config->get('config_open'));
 		$data['comment'] = $this->config->get('config_comment');
+		
+		//Язык через настройки в админке
+		$config_data = $this->config->get('config_langdata');
+				
+		$current_language_id = $this->config->get('config_language_id');
+
+		foreach($config_data as $key => $value){
+			if($key == $current_language_id){
+				$data['description'] = html_entity_decode($value['contacts_data'], ENT_QUOTES, 'UTF-8');
+			}
+		}
 
 		$data['locations'] = array();
 

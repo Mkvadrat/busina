@@ -1,57 +1,45 @@
 <?php echo $header; ?>
-<div class="container">
-  
-  <div class="row">
-	  <div class="col-xs-12">
-				<div class="content-in">
-					<div class="row">
-					
-	<?php echo $column_left; ?>
-    <?php if ($column_left && $column_right) { ?>
-    <?php $class = 'col-sm-6'; ?>
-    <?php } elseif ($column_left || $column_right) { ?>
-    <?php $class = 'col-sm-9'; ?>
-    <?php } else { ?>
-    <?php $class = 'col-sm-12'; ?>
-    <?php } ?>
-    <div id="content" class="<?php echo $class; ?>">
-	
-		<ul class="breadcrumb">
-			<?php foreach ($breadcrumbs as $breadcrumb) { ?>
-			<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-			<?php } ?>
-		</ul>
-		<?php echo $content_top; ?>
-		 <h2 class="page-title"><?php echo $heading_title; ?></h2>
-			<div class="posts-list">
-			<?php foreach ($all_posts as $posts) { ?>
-			<div class="posts-item">
-			<div class="row">
-			 <?php if ($posts['image']) { ?>
-				<div class="col-md-2 col-sm-3 text-center"><a href="<?php echo $posts['view']; ?>"><img src="<?php echo $posts['image']; ?>" style="max-width:100%" /></a></div>
-				<div class="col-md-10 col-sm-9">
-					<div class="posts-title"><a href="<?php echo $posts['view']; ?>"><?php echo $posts['title']; ?></a></div>
-					<div class="posts-date"><?php echo $posts['date_added']; ?></div>
-					<div class="posts-descr"><?php echo $posts['description']; ?></div>
-					<a href="<?php echo $posts['view']; ?>" class="read-more-posts">&#8674; Читать далее</a>
-				</div>
-			 <? } else { ?>
-				<div class="col-xs-12">
-					<div class="posts-title"><?php echo $posts['title']; ?></div>
-					<div class="posts-date"><?php echo $posts['date_added']; ?></div>
-					<div class="posts-descr"><?php echo $posts['description']; ?></div>
-					<a href="<?php echo $posts['view']; ?>" class="read-more-posts">&#8674; Читать далее</a>
-				</div>
-			  <? } ?>
-			</div>
-			</div>
-			<?php } ?>
-			</div>
-	  <div class="row">
-        <div class="col-sm-12 text-center"><?php echo $pagination; ?></div>
-      </div>
-	  <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
-	</div></div></div>
-</div>
+
+    <!-- start main -->
+    <div class="container">
+        <div class="row">
+            <main class="main-akcii">
+                <div class="col-md-3 pad-none-left">
+                    <aside>
+										<?php echo $column_right; ?>
+                    </aside>
+                </div>
+                <div class="col-md-6">
+								<?php if($all_posts) { ?>
+								<?php foreach ($all_posts as $posts) { ?>
+								<article>
+									<div id="info"></div>
+									
+									<h2 class="title-section"><?php echo $posts['title']; ?></h2>
+									<p class="end-date-promotion">Добавлено: <time><?php echo $posts['date_added']; ?></time></p>
+									<img class="text-photo" src="<?php echo $posts['image']; ?>" alt="">
+									<p><?php echo $posts['description']; ?>
+									<a class="more-info" href="<?php echo $posts['view']; ?>">Подробнее</a></p>
+								</article>
+								<?php } ?>
+								<?php }else{ ?>
+								<div class="product-empty">Статей в разделе не найдено.</div>
+								<?php } ?>
+								
+								<?php if ($pagination) { ?>
+								<div class="paggination-block">
+									<ul class="paggination-list">
+										<?php echo $pagination; ?>
+									</ul>
+									<p>Страницы:</p>
+								</div>
+								<?php } ?>
+                </div>
+				
+								<?php echo $content_top; ?>
+            </main>
+        </div>
+    </div>
+    <!-- end main -->
+		
 <?php echo $footer; ?> 

@@ -1,9 +1,9 @@
 <?php
 // Heading 
-$_['heading_title']     		= 'Новости';
+$_['heading_title']     		= 'Скидки и акции';
 
 // Text
-$_['text_list']					= 'Список новостей';
+$_['text_list']					= 'Список скидок и акций';
 $_['text_image']				= 'Картинка';
 $_['text_title']				= 'Название';
 $_['text_description']			= 'Описание';

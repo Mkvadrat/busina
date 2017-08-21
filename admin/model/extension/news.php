@@ -1,7 +1,7 @@
 <?php
 class ModelExtensionNews extends Model {
 	public function addNews($data) {
-		$this->db->query("INSERT INTO " . DB_PREFIX . "news SET image = '" . $this->db->escape($data['image']) . "', date_added = NOW(), status = '" . (int)$data['status'] . "'");
+		$this->db->query("INSERT INTO " . DB_PREFIX . "news SET image = '" . $this->db->escape($data['image']) . "', date_added = NOW(), date_ended = '" . $this->db->escape($data['date_ended']) . "', status = '" . (int)$data['status'] . "'");
 		
 		$news_id = $this->db->getLastId();
 		
@@ -15,7 +15,7 @@ class ModelExtensionNews extends Model {
 	}
 	
 	public function editNews($news_id, $data) {
-		$this->db->query("UPDATE " . DB_PREFIX . "news SET image = '" . $this->db->escape($data['image']) . "', status = '" . (int)$data['status'] . "' WHERE news_id = '" . (int)$news_id . "'");
+		$this->db->query("UPDATE " . DB_PREFIX . "news SET image = '" . $this->db->escape($data['image']) . "', date_ended = '" . $this->db->escape($data['date_ended']) . "', status = '" . (int)$data['status'] . "' WHERE news_id = '" . (int)$news_id . "'");
 		
 		$this->db->query("DELETE FROM " . DB_PREFIX . "news_description WHERE news_id = '" . (int)$news_id. "'");
 		

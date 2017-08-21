@@ -18,6 +18,8 @@
                             <img src="catalog/view/theme/busina/images/banner.jpg" alt="">
                         </div>
                         
+                        <div id="info"></div>
+                        
                         <?php if ($categories) { ?>
                         <p class="title-section">Бусины</p>
                         <ul class="list-products">
@@ -53,10 +55,10 @@
                             <?php } ?>
                         </ul>
                         <?php }else{ ?>
-                        <div class="product-empty"><?php echo $text_empty; ?></p>
+                        <div class="product-empty"><?php echo $text_empty; ?></div>
                         <?php } ?>
                     
-                        <?php if ($pagination) { ?>
+                        <?php if (!empty($pagination)) { ?>
                         <div class="paggination-block">
                             <ul class="paggination-list">
                                 <?php echo $pagination; ?>
