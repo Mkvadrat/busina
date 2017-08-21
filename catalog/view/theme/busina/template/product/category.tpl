@@ -44,7 +44,7 @@
                                 <?php if (!$product['special']) { ?>
                                 <b class="price-product"><?php echo $product['price']; ?></b></p>
                                 <?php } else { ?>
-                                <?php echo $product['special']; ?><sup><strike><?php echo $product['price']; ?></strike></sup>
+                                <b class="price-product"><?php echo $product['special']; ?><sup><strike><?php echo $product['price']; ?></strike></sup></b></p>
                                 <?php } ?>
                                 <?php } ?>
                                 <a href="<?php echo $product['href']; ?>">Подробнее</a>

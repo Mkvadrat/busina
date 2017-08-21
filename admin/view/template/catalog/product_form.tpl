@@ -1131,8 +1131,8 @@ $('input[name=\'option\']').autocomplete({
 		html += '	<div class="form-group">';
 		html += '	  <label class="col-sm-2 control-label" for="input-required' + option_row + '"><?php echo $entry_required; ?></label>';
 		html += '	  <div class="col-sm-10"><select name="product_option[' + option_row + '][required]" id="input-required' + option_row + '" class="form-control">';
-		html += '	      <option value="1"><?php echo $text_yes; ?></option>';
 		html += '	      <option value="0"><?php echo $text_no; ?></option>';
+    html += '	      <option value="1"><?php echo $text_yes; ?></option>';
 		html += '	  </select></div>';
 		html += '	</div>';
 

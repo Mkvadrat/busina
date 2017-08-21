@@ -66,6 +66,15 @@
 <link rel="stylesheet" href="catalog/view/theme/busina/js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 <script type="text/javascript" src="catalog/view/theme/busina/js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
+<!-- EZ-GALLERY -->
+<script src="catalog/view/theme/busina/js/ezgallery/jquery.easing.min.js"></script>
+<script src="catalog/view/theme/busina/js/ezgallery/jquery.fancybox-plus.js"></script>
+<script src="catalog/view/theme/busina/js/ezgallery/jquery.ez-plus.js"></script>
+<script src="catalog/view/theme/busina/js/ezgallery/web.js"></script>
+<link rel="stylesheet" href="catalog/view/theme/busina/css/ezgallery/jquery.fancybox-plus.css">
+<link rel="stylesheet" href="catalog/view/theme/busina/css/ezgallery/jquery.ez-plus.css">
+<!-- EZ-GALLERY -->
+
 <!-- HTML5 for IE -->
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

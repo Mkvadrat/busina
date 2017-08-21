@@ -522,3 +522,17 @@
 2017-08-17 16:48:15 - PHP Notice:  Undefined index: image in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\category.tpl on line 41
 2017-08-17 16:48:15 - PHP Notice:  Undefined index: image in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\category.tpl on line 41
 2017-08-17 16:48:15 - PHP Notice:  Undefined index: image in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\category.tpl on line 41
+2017-08-18 12:22:34 - PHP Notice:  Undefined variable: module in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 151
+2017-08-18 15:08:08 - PHP Notice:  Undefined variable: image in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 21
+2017-08-18 15:08:08 - PHP Notice:  Undefined variable: image in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 21
+2017-08-18 15:34:27 - PHP Notice:  Undefined variable: image in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 42
+2017-08-18 15:34:27 - PHP Notice:  Undefined variable: image in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 42
+2017-08-18 17:18:32 - PHP Notice:  Undefined index: thumb in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 31
+2017-08-18 17:18:32 - PHP Notice:  Undefined index: thumb in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 31
+2017-08-18 17:18:32 - PHP Notice:  Undefined index: thumb in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 31
+2017-08-18 17:18:41 - PHP Notice:  Undefined index: thumb in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 31
+2017-08-18 17:18:41 - PHP Notice:  Undefined index: thumb in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 31
+2017-08-18 17:18:41 - PHP Notice:  Undefined index: thumb in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 31
+2017-08-18 17:19:01 - PHP Notice:  Undefined index: thumb in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 31
+2017-08-18 17:19:01 - PHP Notice:  Undefined index: thumb in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 31
+2017-08-18 17:19:01 - PHP Notice:  Undefined index: thumb in D:\OpenServer\domains\busina.ru\catalog\view\theme\busina\template\product\product.tpl on line 31

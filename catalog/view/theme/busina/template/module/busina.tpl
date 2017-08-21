@@ -67,19 +67,19 @@
 		
 <script>
 $(document).ready(function(){
-		$('#banner<?php echo $module; ?>').owlCarousel({
-			items: 1,
-			loop:true,
-			margin:10,
-			nav:false,
-			autoplay:true,
-			smartSpeed:2000,
-			autoplayTimeout:5000,
-			dots:true,
-			stopOnHover:true,
-			navigationText:["",""],
-			rewindNav:true,
-			pagination:true,
-		});
+	$('#banner<?php echo $module; ?>').owlCarousel({
+		items: 1,
+		loop:true,
+		margin:10,
+		nav:false,
+		autoplay:true,
+		smartSpeed:2000,
+		autoplayTimeout:5000,
+		dots:true,
+		stopOnHover:true,
+		navigationText:["",""],
+		rewindNav:true,
+		pagination:true,
+	});
 });
 </script>
