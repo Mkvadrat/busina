@@ -15,7 +15,7 @@
                       <?php } ?>
                     <?php } ?>
                     <a href="<?php echo $product['href']; ?>">Подробнее</a>
-                    <a class="add-to-cart" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');">Купить</a>
+                    <a class="add-to-cart" onclick="cart.add('<?php echo $product['product_id']; ?>');">Купить</a>
                 </li>
                 <?php } ?>
             </ul>
