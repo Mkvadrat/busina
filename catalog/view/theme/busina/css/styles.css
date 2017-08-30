@@ -337,9 +337,14 @@ aside .list-products-by li {
   margin-bottom: 30px;
 }
 
+.paggination-block p {
+  float: left;
+  margin-right: 20px;
+}
+
 .paggination-list {
-  float: right;
-  width: 740px;
+  width: auto;
+  margin-top: -2px;
 }
 
 .paggination-list li {
@@ -783,19 +788,22 @@ p {
   border-radius: 3px;
 }
 
-.header .top-menu li a:hover,
-.header .top-menu li:first-child a {
+.header .top-menu li a:hover {
   background-color: #0317aa;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ef0e39), to(#65126d));
-  background-image: -webkit-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
-  background-image: -o-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
-  background-image: linear-gradient(to top, #ef0e39 0%, #65126d 100%);
   color: #FFF;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+.header .top-menu li:first-child a {
+  color: #FFF;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ef0e39), to(#65126d));
+  background-image: -webkit-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
+  background-image: -o-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
+  background-image: linear-gradient(to top, #ef0e39 0%, #65126d 100%);
 }
 
 .header .top-menu li a:not(:hover) {
@@ -1758,8 +1766,6 @@ form legend {
 
 .list-unstyled {
   padding-bottom: 20px;
-  max-width: 180px;
-  width: auto;
 }
 
 .list-unstyled li a {
@@ -1780,4 +1786,112 @@ form legend {
 
 .table-responsive td .btn-info {
   margin-bottom: 0;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.banner .control-label {
+  padding: 10px 0 20px 14px;
+}
+
+.banner #input-search,
+.banner .form-control {
+  width: 90%;
+  margin-left: 14px;
+  margin-bottom: 15px;
+}
+
+.banner input[type="checkbox"] {
+  margin-left: 14px;
+}
+
+.banner #button-search {
+  float: right;
+  display: block;
+  margin-top: 30px;
+  margin-right: 70px;
+}
+
+.tab-content label {
+  padding-bottom: 10px
+}
+
+.tab-content textarea {
+  margin-bottom: 20px;
+}
+
+.tab-content #button-review {
+  margin-top: 40px;
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 20px;
+  border: none;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.tab-content #button-review:hover {
+    background-color: #bababa;
+    text-decoration: none;
+}
+
+.tab-content .control-label {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.wrpap-block {
+  float: left;
+  margin-right: 30px;
+  width: 200px;
+}
+
+.owl-controls,
+.owl-pagination {
+  position: absolute;
+}
+
+.owl-pagination {
+  top: 0 !important;
+}
+
+.owl-controls {
+  margin-left: -27px;
+  left: 50%;
+  bottom: 10px;
+}
+
+.owl-controls .owl-page {
+  margin: 0 !important;
+}
+
+.owl-controls .owl-page span {
+    position: relative;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 4px !important;
+    background-color: white !important;
+    border: 1px solid #8b8b8b !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+}
+
+.owl-controls .active span::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    background-color: #111;
+    border-radius: 2px;
 }
