@@ -16,7 +16,7 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+    <div id="content" class="<?php echo $class; ?> align-center"><?php echo $content_top; ?>
       <div class="wrpap-block">
         <h2><?php echo $text_my_account; ?></h2>
         <ul class="list-unstyled">

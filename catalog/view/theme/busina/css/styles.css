@@ -1854,10 +1854,16 @@ form legend {
   padding-bottom: 20px;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .wrpap-block {
-  float: left;
-  margin-right: 30px;
+  vertical-align: top;
+  display: inline-block;
+  margin: 20px;
   width: 200px;
+  text-align: left;
 }
 
 .owl-controls,
