@@ -683,6 +683,12 @@ p {
   margin: 10px 30px 10px 20px;
 }
 
+.header .logo h1 {
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
 .header .logo a {
   cursor: pointer;
 }
@@ -708,7 +714,7 @@ p {
 
 .header .phones {
   float: right;
-  margin-top: 48px;
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 20px;
 }
@@ -738,7 +744,7 @@ p {
 
 .header .mail {
   float: right;
-  margin: 48px 7px 0px 10px;
+  margin: 20px 7px 0px 10px;
 }
 
 .header .mail p {
@@ -770,8 +776,8 @@ p {
 
 .header .top-menu {
   float: right;
-  margin-top: 23px;
-  margin-bottom: 7px;
+  margin-top: 18px;
+  margin-bottom: 30px;
 }
 
 .header .top-menu li {
@@ -1894,4 +1900,18 @@ form legend {
     height: 4px;
     background-color: #111;
     border-radius: 2px;
+}
+
+.menu-button {
+  display: block;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background: #FFF;
+  border: 1px solid #000;
+  margin: 20px;
+}
+
+.overflow {
+  overflow: hidden;
 }
