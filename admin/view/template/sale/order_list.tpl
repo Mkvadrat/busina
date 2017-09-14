@@ -3,6 +3,10 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
+        <?php if(isset($invoice_kassa)){ ?>
+          <a href="<?php echo $invoice_kassa; ?>" data-toggle="tooltip" title="<?php echo $button_invoice_kassa; ?>" class="btn btn-warning"><i class="fa fa-envelope"></i></a>
+        <?php } ?>
+        
         <button type="submit" id="button-shipping" form="form-order" formaction="<?php echo $shipping; ?>" data-toggle="tooltip" title="<?php echo $button_shipping_print; ?>" class="btn btn-info"><i class="fa fa-truck"></i></button>
         <button type="submit" id="button-invoice" form="form-order" formaction="<?php echo $invoice; ?>" data-toggle="tooltip" title="<?php echo $button_invoice_print; ?>" class="btn btn-info"><i class="fa fa-print"></i></button>
         <a href="<?php echo $add; ?>" data-toggle="tooltip" title="<?php echo $button_add; ?>" class="btn btn-primary"><i class="fa fa-plus"></i></a></div>
@@ -132,7 +136,12 @@
                   <td class="text-right"><?php echo $order['total']; ?></td>
                   <td class="text-left"><?php echo $order['date_added']; ?></td>
                   <td class="text-left"><?php echo $order['date_modified']; ?></td>
-                  <td class="text-right"><a href="<?php echo $order['view']; ?>" data-toggle="tooltip" title="<?php echo $button_view; ?>" class="btn btn-info"><i class="fa fa-eye"></i></a> <a href="<?php echo $order['edit']; ?>" data-toggle="tooltip" title="<?php echo $button_edit; ?>" id="button-edit" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+                  <td class="text-right">
+                    <a href="<?php echo $order['view']; ?>" data-toggle="tooltip" title="<?php echo $button_view; ?>" class="btn btn-info"><i class="fa fa-eye"></i></a>
+                    <a href="<?php echo $order['edit']; ?>" data-toggle="tooltip" title="<?php echo $button_edit; ?>" id="button-edit" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+                    <?php if(isset($order['payment_code']) && $order['payment_code']=='yamodule'){ ?>
+                      <a href="<?php echo $order['mws']; ?>" data-toggle="tooltip" title="Управление заказом" class="btn btn-success"><i class="fa fa-briefcase"></i></a>
+                    <?php } ?>
                     <button type="button" value="<?php echo $order['order_id']; ?>" id="button-delete<?php echo $order['order_id']; ?>" data-loading-text="<?php echo $text_loading; ?>" data-toggle="tooltip" title="<?php echo $button_delete; ?>" class="btn btn-danger"><i class="fa fa-trash-o"></i></button></td>
                 </tr>
                 <?php } ?>

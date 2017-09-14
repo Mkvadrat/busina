@@ -169,6 +169,8 @@ class ControllerSaleOrder extends Controller {
 				'date_added'    => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
 				'date_modified' => date($this->language->get('date_format_short'), strtotime($result['date_modified'])),
 				'shipping_code' => $result['shipping_code'],
+				'mws'		    => $this->url->link('tool/mws', 'token=' . $this->session->data['token'] . '&order_id=' . $result['order_id'] . $url, true),
+				'payment_code'  => (isset($result['payment_code']) && $this->config->get('ya_kassa_active'))?$result['payment_code']:'',
 				'view'          => $this->url->link('sale/order/info', 'token=' . $this->session->data['token'] . '&order_id=' . $result['order_id'] . $url, 'SSL'),
 				'edit'          => $this->url->link('sale/order/edit', 'token=' . $this->session->data['token'] . '&order_id=' . $result['order_id'] . $url, 'SSL'),
 			);
@@ -206,6 +208,12 @@ class ControllerSaleOrder extends Controller {
 		$data['button_filter'] = $this->language->get('button_filter');
 		$data['button_view'] = $this->language->get('button_view');
 		$data['button_ip_add'] = $this->language->get('button_ip_add');
+		
+		if($this->config->get('ya_kassa_active')){
+			$data['button_invoice_kassa'] = $this->language->get('button_invoice_kassa');
+			$for23 = (version_compare(VERSION, "2.3.0", '>='))?"extension/":"";
+			$data['invoice_kassa'] = $this->url->link($for23.'payment/yamodule/invoice', 'token=' . $this->session->data['token'], true);
+		}
 
 		$data['token'] = $this->session->data['token'];
 

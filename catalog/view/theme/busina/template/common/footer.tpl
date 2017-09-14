@@ -37,8 +37,38 @@
     </div>
 
     <!-- end footer -->
+<?php if (isset ($ya_metrika_active) && $ya_metrika_active){ ?>
+<?php echo $yandex_metrika; ?>
+<script type="text/javascript">
+    var old_addCart = cart.add;
+    cart.add = function (product_id, quantity){
+        var params_cart = new Array();
+        params_cart['name'] = 'product id = '+product_id;
+        params_cart['quantity'] = quantity;
+        params_cart['price'] = 0;
+        old_addCart(product_id, quantity);
+        metrikaReach('metrikaCart', params_cart);
+    }
 
+    $('#button-cart').on('click', function() {
+        var params_cart = new Array();
+        params_cart['name'] = 'product id = '+ $('#product input[name="product_id"]').val();
+        params_cart['quantity'] = $('#product input[name="quantity"]').val();
+        params_cart['price'] = 0;
+        metrikaReach('metrikaCart', params_cart);
+    });
+
+    function metrikaReach(goal_name, params) {
+        for (var i in window) {
+            if (/^yaCounter\d+/.test(i)) {
+                window[i].reachGoal(goal_name, params);
+            }
+        }
+    }
+</script>
+<?php } ?>
 <script>
+    
 $(function () {                                      
     $('.top-menu li a').each(function () {             
         var location = window.location.href; 

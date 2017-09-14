@@ -5,6 +5,7 @@ $_['heading_title']              = 'Orders';
 // Text
 $_['text_list']                  = 'Order List';
 $_['text_add']                   = 'Add Order';
+$_['button_invoice_kassa']       = 'Invoicing';
 $_['text_edit']                  = 'Edit Order';
 $_['text_order_detail']          = 'Order Details';
 $_['text_customer_detail']       = 'Customer Details';

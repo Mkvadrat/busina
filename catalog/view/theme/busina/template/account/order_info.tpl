@@ -121,6 +121,13 @@
               <?php } ?>
             </tr>
             <?php } ?>
+            <?php if (isset($yamodule)) { ?>
+            <tr>
+              <td colspan="<?php if ($products) {echo "6";}else{echo "5";} ?>">
+                 <?php echo $yamodule; ?>
+              </td>
+            </tr>
+            <?php } ?>
           </tfoot>
         </table>
       </div>

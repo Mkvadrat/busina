@@ -44,6 +44,8 @@ class ControllerCommonFooter extends Controller {
 		$data['order'] = $this->url->link('account/order', '', 'SSL');
 		$data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
 		$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
+		$data['yandex_metrika'] = $this->config->get('ya_metrika_code') ? html_entity_decode($this->config->get('ya_metrika_code'), ENT_QUOTES, 'UTF-8') : '';
+		$data['ya_metrika_active'] = $this->config->get('ya_metrika_active') ? true : false;
 		$data['telephone'] = $this->config->get('config_telephone');
 		$data['fax'] = $this->config->get('config_fax');
 		$data['email'] = $this->config->get('config_email');

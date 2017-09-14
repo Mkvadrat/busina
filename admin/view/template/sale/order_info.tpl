@@ -568,6 +568,37 @@ $('#history').delegate('.pagination a', 'click', function(e) {
 $('#history').load('index.php?route=sale/order/history&token=<?php echo $token; ?>&order_id=<?php echo $order_id; ?>');
 
 $('#button-history').on('click', function() {
+    <?php $for23 = (version_compare(VERSION, "2.3.0", '>='))?"extension/":""; ?>
+			$.ajax({
+				url: 'index.php?route=<?php echo $for23;?>feed/yamodule/changestatus&token=<?php echo $token; ?>&order_id=<?php echo $order_id; ?>',
+				type: 'post',
+				dataType: 'json',
+				data: 'order_status_id=' + encodeURIComponent($('select[name=\'order_status_id\']').val()) + '&notify=' + ($('input[name=\'notify\']').prop('checked') ? 1 : 0) + '&override=' + ($('input[name=\'override\']').prop('checked') ? 1 : 0) + '&append=' + ($('input[name=\'append\']').prop('checked') ? 1 : 0) + '&comment=' + encodeURIComponent($('textarea[name=\'comment\']').val()),
+				beforeSend: function() {
+					$('#button-commission-remove').button('loading');
+				},
+				complete: function() {
+					$('#button-commission-remove').button('reset');
+				},
+				success: function(json) {
+					$('.alert').remove();
+
+					if (json['error']) {
+						$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
+					}
+
+					if (json['success']) {
+						$('#content > .container-fluid').prepend('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
+
+						$('#button-commission-remove').replaceWith('<button id="button-commission-add" data-toggle="tooltip" title="<?php echo $button_commission_add; ?>" class="btn btn-success btn-xs"><i class="fa fa-plus-circle"></i></button>');
+					}
+				},
+				error: function(xhr, ajaxOptions, thrownError) {
+					alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+				}
+			});
+			//
+      
 	if (typeof verifyStatusChange == 'function'){
 		if (verifyStatusChange() == false){
 			return false;

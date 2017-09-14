@@ -5,6 +5,7 @@ $_['heading_title']                           = 'Заказы';
 // Text
 $_['text_list']                               = 'Список Заказов';
 $_['text_add']                                = 'Добавление Заказа';
+$_['button_invoice_kassa']                    = 'Выставление счета';
 $_['text_edit']                               = 'Редактирование Заказа';
 $_['text_order_detail']                       = 'Информация о заказе';
 $_['text_customer_detail']                    = 'Информация о покупателе';

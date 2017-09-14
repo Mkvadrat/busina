@@ -356,7 +356,17 @@ class ControllerAccountOrder extends Controller {
 			}
 
 			$data['comment'] = nl2br($order_info['comment']);
-
+			
+			//YandexKassa
+			$for23 = (version_compare(VERSION, "2.3.0", '>='))?"extension/":"";
+			
+			$this->language->load($for23.'payment/yamodule');
+			
+			if($order_info['payment_method']==$this->language->get('kassa_title') || $order_info['payment_method']==$this->language->get('p2p_title')){
+				$this->session->data['order_id']= $this->request->get['order_id'];
+				$data["yamodule"] = $this->load->controller($for23."payment/yamodule");
+			}
+			
 			// History
 			$data['histories'] = array();
 

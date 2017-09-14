@@ -4,6 +4,9 @@ class ControllerCheckoutSuccess extends Controller {
 		$this->load->language('checkout/success');
 
 		if (isset($this->session->data['order_id'])) {
+			$for23 = (version_compare(VERSION, "2.3.0", '>='))?"extension/":"";
+			$this->load->model($for23.'yamodel/pokupki');
+			$data['script_order'] = $this->{'model_'.str_replace("/", "_", $for23).'yamodel_pokupki'}->getscript($this->session->data['order_id']);
 			$this->cart->clear();
 
 			// Add to activity log
