@@ -29,10 +29,10 @@
 					
 					<?php if ($pagination) { ?>
 					<div class="paggination-block">
+						<p>Страницы:</p>
 						<ul class="paggination-list">
 							<?php echo $pagination; ?>
 						</ul>
-						<p>Страницы:</p>
 					</div>
 					<?php } ?>
                 </div>

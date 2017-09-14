@@ -98,5 +98,8 @@ $(function () {
     });
 </script>
 
+
+<script type="text/javascript" src="catalog/view/theme/busina/js/common.js"></script>
+
 </body>
 </html>

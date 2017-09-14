@@ -167,7 +167,7 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 overflow">
                     <div class="logo">
                         <a href="<?php echo $home; ?>">
                             <?php if ($logo) { ?>
@@ -199,6 +199,7 @@
 
                 <div class="col-md-12 pad-none">
                     <div class="block-main-menu">
+                        <button type="button" class="menu-button hidden-md hidden-lg"><i class="fa fa-bars"></i></button>
                         <ul class="main-menu">
                             <li><a href="<?php echo $catalog; ?>">Каталог</a></li>
                             <li><a href="<?php echo $payment_delivery; ?>">Оплата и доставка</a></li>

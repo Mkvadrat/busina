@@ -65,21 +65,14 @@
     </div>
     <!-- end main -->
 		
-<script>
-$(document).ready(function(){
-	$('#banner<?php echo $module; ?>').owlCarousel({
-		items: 1,
-		loop:true,
-		margin:10,
-		nav:false,
-		autoplay:true,
-		smartSpeed:2000,
-		autoplayTimeout:5000,
-		dots:true,
-		stopOnHover:true,
-		navigationText:["",""],
-		rewindNav:true,
-		pagination:true,
-	});
+<script type="text/javascript"><!--
+$('#banner<?php echo $module; ?>').owlCarousel({
+ items: 6,
+ autoPlay: 3000,
+ singleItem: true,
+ navigation: false,
+ pagination: false,
+ dots:true,
+ pagination:true,
 });
-</script>
+--></script>
