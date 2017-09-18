@@ -9,7 +9,7 @@ $(document).ready(function() {
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
+	//$(".top_mnu").navigation();
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
@@ -17,6 +17,10 @@ $(document).ready(function() {
 		$.scrollTo($(".div"), 800, {
 			offset: -90
 		});
+	});
+
+	$(".menu-button").click(function() {
+		$(".block-main-menu .main-menu").slideToggle();
 	});
 
 	//Каруселька

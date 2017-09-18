@@ -45,7 +45,8 @@ a {
   padding-right: 0;
 }
 
-.title-section {
+.title-section,
+h1 {
   color: #56617f;
   font-size: 14px;
   font-weight: 400;
@@ -160,7 +161,7 @@ aside .list-products-by li {
   vertical-align: top;
   width: 259px;
   height: auto;
-  min-height: 310px;
+  min-height: 400px;
   border: 1px solid #e0e0e0;
   text-align: center;
   margin-right: 20px;
@@ -336,9 +337,14 @@ aside .list-products-by li {
   margin-bottom: 30px;
 }
 
+.paggination-block p {
+  float: left;
+  margin-right: 20px;
+}
+
 .paggination-list {
-  float: right;
-  width: 740px;
+  width: auto;
+  margin-top: -2px;
 }
 
 .paggination-list li {
@@ -375,7 +381,7 @@ aside .list-products-by li {
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 0 0 20px;
+  padding: 20px 0;
 }
 
 p {
@@ -677,6 +683,12 @@ p {
   margin: 10px 30px 10px 20px;
 }
 
+.header .logo h1 {
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
 .header .logo a {
   cursor: pointer;
 }
@@ -702,7 +714,7 @@ p {
 
 .header .phones {
   float: right;
-  margin-top: 48px;
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 20px;
 }
@@ -732,7 +744,7 @@ p {
 
 .header .mail {
   float: right;
-  margin: 48px 7px 0px 10px;
+  margin: 20px 7px 0px 10px;
 }
 
 .header .mail p {
@@ -764,8 +776,8 @@ p {
 
 .header .top-menu {
   float: right;
-  margin-top: 23px;
-  margin-bottom: 7px;
+  margin-top: 18px;
+  margin-bottom: 30px;
 }
 
 .header .top-menu li {
@@ -784,16 +796,20 @@ p {
 
 .header .top-menu li a:hover {
   background-color: #0317aa;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ef0e39), to(#65126d));
-  background-image: -webkit-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
-  background-image: -o-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
-  background-image: linear-gradient(to top, #ef0e39 0%, #65126d 100%);
   color: #FFF;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+.header .top-menu li:first-child a {
+  color: #FFF;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ef0e39), to(#65126d));
+  background-image: -webkit-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
+  background-image: -o-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
+  background-image: linear-gradient(to top, #ef0e39 0%, #65126d 100%);
 }
 
 .header .top-menu li a:not(:hover) {
@@ -1343,7 +1359,7 @@ p {
 
 .main-in .banner .enter-shop {
   position: absolute;
-  top: 28px;
+  top: 45px;
   right: 33px;
   text-align: center;
 }
@@ -1609,10 +1625,6 @@ p {
 /*Изменения 16.08.2017*/
 .active-menu {
   background-color: #0317aa;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ef0e39), to(#65126d));
-  background-image: -webkit-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
-  background-image: -o-linear-gradient(bottom, #ef0e39 0%, #65126d 100%);
-  background-image: linear-gradient(to top, #ef0e39 0%, #65126d 100%);
   color: #FFF !important;
 }
 
@@ -1630,4 +1642,282 @@ p {
 
 .add-to-cart{
   cursor: pointer;
+}
+
+
+/* 28.08.2017 */
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb a {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.header + .container {
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.13);
+  background-color: #fff;
+}
+
+.well {
+  background-color: transparent;
+  border: 1px solid #e0e0e0 !important;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  box-shadow: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 20px;
+  margin-bottom: 20px;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #bababa;
+}
+
+.well h2,
+h2 {
+  font-size: 18px;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.form-group label {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 5px;
+}
+
+.form-group input {
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+}
+
+.form-group a,
+p a,
+.pull-right a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
+.pull-right a {
+  margin-top: 20px;
+}
+
+.form-group a:hover,
+p a:hover,
+.pull-right a:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+form legend {
+  font-size: 18px;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.help-block {
+  margin-top: 10px;
+}
+
+.form-control {
+  resize: none;
+}
+
+.price-product sup {
+  display: block;
+  padding-top: 10px;
+}
+
+.product-empty {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+
+.breadcrumb {
+  display: none;
+}
+
+.list-unstyled {
+  padding-bottom: 20px;
+}
+
+.list-unstyled li a {
+  display: block;
+  color: #4f4f4f;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table-responsive td {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.table-responsive td .btn-info {
+  margin-bottom: 0;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.banner .control-label {
+  padding: 10px 0 20px 14px;
+}
+
+.banner #input-search,
+.banner .form-control {
+  width: 90%;
+  margin-left: 14px;
+  margin-bottom: 15px;
+}
+
+.banner input[type="checkbox"] {
+  margin-left: 14px;
+}
+
+.banner #button-search {
+  float: right;
+  display: block;
+  margin-top: 30px;
+  margin-right: 70px;
+}
+
+.tab-content label {
+  padding-bottom: 10px
+}
+
+.tab-content textarea {
+  margin-bottom: 20px;
+}
+
+.tab-content #button-review {
+  margin-top: 40px;
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 20px;
+  border: none;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.tab-content #button-review:hover {
+    background-color: #bababa;
+    text-decoration: none;
+}
+
+.tab-content .control-label {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.wrpap-block {
+  vertical-align: top;
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  text-align: left;
+}
+
+.owl-controls,
+.owl-pagination {
+  position: absolute;
+}
+
+.owl-pagination {
+  top: 0 !important;
+}
+
+.owl-controls {
+  margin-left: -27px;
+  left: 50%;
+  bottom: 10px;
+}
+
+.owl-controls .owl-page {
+  margin: 0 !important;
+}
+
+.owl-controls .owl-page span {
+    position: relative;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 4px !important;
+    background-color: white !important;
+    border: 1px solid #8b8b8b !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+}
+
+.owl-controls .active span::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    background-color: #111;
+    border-radius: 2px;
+}
+
+.menu-button {
+  display: block;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background: #FFF;
+  border: 1px solid #000;
+  margin: 20px;
+}
+
+.overflow {
+  overflow: hidden;
 }
