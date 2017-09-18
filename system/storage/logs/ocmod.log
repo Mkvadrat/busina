@@ -1,0 +1,34 @@
+2017-09-18 17:26:42 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------

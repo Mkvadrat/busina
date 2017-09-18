@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']		 = 'Банковский перевод';
+$_['heading_title']		 = 'Оплата при помощи карты РНКБ';
 
 // Text
 $_['text_payment']		 = 'Оплата';
