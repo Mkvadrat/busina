@@ -680,7 +680,7 @@ p {
 /*----- start header -----*/
 .header .logo {
   float: left;
-  margin: 10px 30px 10px 20px;
+  margin: 10px 30px 6px 20px;
 }
 
 .header .logo h1 {
@@ -714,9 +714,10 @@ p {
 
 .header .phones {
   float: right;
-  margin-top: 20px;
+  margin-top: 53px;
   margin-bottom: 10px;
   margin-right: 20px;
+  line-height: 18px;
 }
 
 .header .phones p {
@@ -736,6 +737,8 @@ p {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .header .phones p:last-child {
@@ -744,11 +747,12 @@ p {
 
 .header .mail {
   float: right;
-  margin: 20px 7px 0px 10px;
+  margin: 53px 7px 0px 10px;
 }
 
 .header .mail p {
   padding-bottom: 0px;
+  line-height: 18px;
 }
 
 .header .mail p i {
@@ -762,6 +766,8 @@ p {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .header .mail p:first-child i {
@@ -776,8 +782,8 @@ p {
 
 .header .top-menu {
   float: right;
-  margin-top: 18px;
-  margin-bottom: 30px;
+  margin-top: 13px;
+  margin-bottom: 8px;
 }
 
 .header .top-menu li {
@@ -890,7 +896,7 @@ p {
   background-color: white;
   border: 1px solid #d2d2d2;
   border-radius: 3px;
-  margin: 10px 0;
+  margin: 9px 0 0;
 }
 
 .header .bottom-line-header .search input[type="search"] {
@@ -921,7 +927,7 @@ p {
 }
 
 .header .bottom-line-header .personal-area-block {
-  margin: 14px 0 10px;
+  margin: 12px 0 5px;
 }
 
 .header .bottom-line-header .personal-area-block p {
@@ -935,6 +941,7 @@ p {
 .header .bottom-line-header .personal-area-block p a {
   color: #111;
   font-weight: 700;
+  margin-top: 0;
 }
 
 .header .bottom-line-header .personal-area-block p a:first-child {
@@ -943,7 +950,7 @@ p {
 
 .header .bottom-line-header .shopp-basket {
   text-align: right;
-  margin: 14px 0 10px;
+  margin: 12px 0 10px;
   padding: 0;
 }
 
@@ -955,6 +962,8 @@ p {
   font-size: 14px;
   font-weight: 400;
   color: #4f4f4f;
+  margin-top: 0;
+  padding-bottom: 0;
 }
 
 .header .bottom-line-header .shopp-basket a span {
@@ -1106,7 +1115,7 @@ p {
 }
 
 .footer .list-catogories-footer {
-  padding: 30px 60px;
+  padding: 26px 60px;
   text-align: center;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
@@ -1166,10 +1175,11 @@ p {
 
 .footer p {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 12px;
   vertical-align: top;
   border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 6px;
 }
 
 .footer p:before {
@@ -1252,7 +1262,7 @@ p {
   float: right;
   padding: 0;
   border: none;
-  margin-top: 18px;
+  margin-top: 7px;
 }
 
 .footer .make-in a {
