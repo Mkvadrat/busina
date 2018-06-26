@@ -45,7 +45,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php }?>
+                            <?php } ?>
                             <p class="title-list">Артикул: </p>
                             <p class="vendor-code"><?php echo $model; ?></p>
                             <?php if ($options) { ?>
