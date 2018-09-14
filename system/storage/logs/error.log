@@ -1,3 +1,5 @@
-2017-09-14 12:31:58 - PHP Notice:  Undefined index: ya_kassa_sid in D:\OpenServer\domains\busina.ru\admin\controller\tool\mws.php on line 18
-2017-09-14 12:34:15 - callback:  orderid=1
-
+2018-09-14 15:06:36 - PHP Notice:  Undefined index: entry_action in D:\OpenServer\domains\1bus.loc\admin\view\template\module\exchange1c.tpl on line 64
+2018-09-14 15:06:36 - PHP Notice:  Undefined index: help_upload in D:\OpenServer\domains\1bus.loc\admin\view\template\module\exchange1c.tpl on line 678
+2018-09-14 15:06:36 - PHP Notice:  Undefined index: help_download_orders in D:\OpenServer\domains\1bus.loc\admin\view\template\module\exchange1c.tpl on line 692
+2018-09-14 15:06:36 - PHP Notice:  Undefined index: button_download_orders in D:\OpenServer\domains\1bus.loc\admin\view\template\module\exchange1c.tpl on line 694
+2018-09-14 15:06:39 - PHP Warning:  rmdir(D:/OpenServer/domains/1bus.loc/image/cache/catalog/demo/): Directory not empty in D:\OpenServer\domains\1bus.loc\admin\controller\module\exchange1c.php on line 2252
