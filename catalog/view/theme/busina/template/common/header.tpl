@@ -199,9 +199,25 @@
 
                 <div class="col-md-12 pad-none">
                     <div class="block-main-menu">
-                        <button type="button" class="menu-button hidden-md hidden-lg"><i class="fa fa-bars"></i></button>
+                        <button type="button" class="col-xs-3 menu-button hidden-md hidden-lg"><i class="fa fa-bars"></i></button>
+                        <div class="mob-search_n_log col-xs-12">
+                            <div class="col-md-3 pad-none-left">
+                                <?php echo $search; ?>
+                            </div>
+                            <div>
+                                <div class="personal-area-block">
+                                    <?php if ($logged) { ?>
+                                        <p><span class="notmobile">Здравствуйте <?php echo $user_name; ?>, здесь Вы можете войти в </span><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a> | <a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></p>
+                                    <?php }else{ ?>
+                                        <p>
+                                            <span class="notmobile">Личный кабинет </span><a href="<?php echo $login; ?>">Войти</a> или <a href="<?php echo $register; ?>">Зарегистрироваться</a>
+                                        </p>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        </div>
                         <ul class="main-menu">
-                            <li><a href="<?php echo $catalog; ?>">Каталог</a></li>
+                            <li><a href="<?php echo $home; ?>">Главная</a></li>
                             <li><a href="<?php echo $payment_delivery; ?>">Оплата и доставка</a></li>
                             <li><a href="<?php echo $wholesalers; ?>">Оптовикам</a></li>
                             <li><a href="<?php echo $news; ?>">Скидки и акции</a></li>
@@ -219,10 +235,10 @@
                     <div class="col-md-6">
                         <div class="personal-area-block">
                             <?php if ($logged) { ?>
-                                <p>Здравствуйте <?php echo $user_name; ?>, здесь Вы можете войти в <a href="<?php echo $account; ?>"><?php echo $text_account; ?></a> | <a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></p>
+                                <p><span class="notmobile">Здравствуйте <?php echo $user_name; ?>, здесь Вы можете войти в </span><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a> | <a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></p>
                             <?php }else{ ?>
                                 <p>
-                                    Личный кабинет <a href="<?php echo $login; ?>">Войти</a> или <a href="<?php echo $register; ?>">Зарегистрироваться</a>
+                                    <span class="notmobile">Личный кабинет </span><a href="<?php echo $login; ?>">Войти</a> или <a href="<?php echo $register; ?>">Зарегистрироваться</a>
                                 </p>
                             <?php } ?>
                         </div>

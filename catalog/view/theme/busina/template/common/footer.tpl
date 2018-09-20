@@ -4,12 +4,12 @@
             <div class="col-md-12">
                 <footer class="footer">
                     <ul class="list-catogories-footer">
+                        <li><a href="<?php echo $home; ?>">Главная</a></li>
                         <li><a href="<?php echo $novelties; ?>">Новинки</a></li>
                         <li><a href="<?php echo $special; ?>">Распродажа</a></li>
                         <li><a href="<?php echo $guarantees; ?>">Наши гарантии</a></li>
                         <li><a href="<?php echo $refund; ?>">Обмен и возврат</a></li>
                         <li><a href="<?php echo $about; ?>">О магазине</a></li>
-                        <li><a href="<?php echo $catalog; ?>">Каталог</a></li>
                         <li><a href="<?php echo $payment_delivery; ?>">Оплата и доставка</a></li>
                         <li><a href="<?php echo $wholesalers; ?>">Оптовикам</a></li>
                         <li><a href="<?php echo $news; ?>">Скидки и акции</a></li>

@@ -97,10 +97,97 @@
 		display: none;
 	}
 
+	button.mob-catalog {
+		background-color: #0317aa;
+		background-image: -webkit-gradient(linear, left bottom, left top, from(#1134a0), to(#3da1d3));
+		background-image: -webkit-linear-gradient(bottom, #1134a0 0%, #3da1d3 100%);
+		background-image: -o-linear-gradient(bottom, #1134a0 0%, #3da1d3 100%);
+		background-image: linear-gradient(to top, #1134a0 0%, #3da1d3 100%);
+		border-radius: 3px;
+		overflow: hidden;
+		border: none;
+		outline: none;
+		width: 100%;
+		display: block;
+		padding: 20px 0;
+		color: #fff;
+		margin: 0 0 20px;
+		position: relative;
+		left: 0;
+	}
+	.header .bottom-line-header .search,
+	.header .bottom-line-header .personal-area-block,
+	.notmobile,
+	.mob-catalog.opened span,
+	.mob-catalog .opened {
+		display: none;
+	}
+	.header .bottom-line-header .shopp-basket {
+		margin: 12px 0;
+	}
+	.mob-catalog.opened .opened {
+		display: inline;
+	}
+	.header .block-main-menu {
+		position: relative;
+	}
+	.mob-search_n_log {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.header .mob-search_n_log .search input[type="search"] {
+		width: 100%;
+		height: 100%;
+		padding: 4px 40px 4px 12px;
+		color: #4f4f4f;
+		font-size: 14px;
+		font-style: italic;
+		border: none;
+	}
+	
+	.header .mob-search_n_log .search {
+		position: relative;
+		width: 215px;
+		height: 30px;
+		background-color: white;
+		border: 1px solid #d2d2d2;
+		border-radius: 3px;
+		margin: 9px auto 0;
+	}
+	
+	.header .mob-search_n_log .search input[type="submit"] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40px;
+		height: 28px;
+		background-color: transparent;
+		border: none;
+		background-image: url(../images/sprite.png);
+		background-repeat: no-repeat;
+		background-position: 3px 1px;
+	}
+	
+	.header .mob-search_n_log .personal-area-block p {
+		font-size: 14px;
+		color: #ccc;
+		font-weight: 400;
+		text-align: center;
+		padding: 0;
+	}
+	
+	.header .mob-search_n_log .personal-area-block p a {
+		color: #fff;
+		font-weight: 700;
+		margin-top: 0;
+	}
 	.list-text-items {
 		min-height: auto;
 		height: auto;
 		margin-bottom: 40px;
+		display: none;
 	}
 
 	.footer .list-catogories-footer {
@@ -180,6 +267,13 @@
 @media only screen and (max-width : 480px) {
 	#review {
 		margin-bottom: 20px;
+	}
+	.header .mob-search_n_log .search {
+		margin: 9px 0 0 auto;
+	}
+	
+	.header .mob-search_n_log .personal-area-block p {
+		text-align: right;
 	}
 }
 

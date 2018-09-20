@@ -4,7 +4,7 @@ class ControllerCommonFooter extends Controller {
 		$this->load->language('common/footer');
 
 		$data['scripts'] = $this->document->getScripts('footer');
-
+		
 		$data['text_information'] = $this->language->get('text_information');
 		$data['text_service'] = $this->language->get('text_service');
 		$data['text_extra'] = $this->language->get('text_extra');
@@ -32,7 +32,8 @@ class ControllerCommonFooter extends Controller {
 				);
 			}
 		}
-
+		
+		$data['home'] = $this->url->link('common/home');
 		$data['contact'] = $this->url->link('information/contact');
 		$data['return'] = $this->url->link('account/return/add', '', 'SSL');
 		$data['sitemap'] = $this->url->link('information/sitemap');

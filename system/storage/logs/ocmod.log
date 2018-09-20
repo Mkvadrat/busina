@@ -141,3 +141,1533 @@ LINE: 19
 CODE: $_['text_yes']
 LINE: 19
 ----------------------------------------------------------------
+2018-09-14 15:07:31 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+CODE: echo $quote['title'];
+LINE: 36
+CODE: <input type="radio" name="shipping_method"
+LINE: 15
+LINE: 17
+LINE: 23
+LINE: 25
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+CODE: $_['text_yes']
+LINE: 19
+CODE: $_['text_yes']
+LINE: 19
+----------------------------------------------------------------
+2018-09-14 16:15:05 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+CODE: echo $quote['title'];
+LINE: 36
+CODE: <input type="radio" name="shipping_method"
+LINE: 15
+LINE: 17
+LINE: 23
+LINE: 25
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+CODE: $_['text_yes']
+LINE: 19
+CODE: $_['text_yes']
+LINE: 19
+----------------------------------------------------------------
+2018-09-14 16:23:30 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+CODE: echo $quote['title'];
+LINE: 36
+CODE: <input type="radio" name="shipping_method"
+LINE: 15
+LINE: 17
+LINE: 23
+LINE: 25
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+CODE: $_['text_yes']
+LINE: 19
+CODE: $_['text_yes']
+LINE: 19
+----------------------------------------------------------------
+2018-09-17 10:04:43 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+CODE: echo $quote['title'];
+LINE: 36
+CODE: <input type="radio" name="shipping_method"
+LINE: 15
+LINE: 17
+LINE: 23
+LINE: 25
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+CODE: $_['text_yes']
+LINE: 19
+CODE: $_['text_yes']
+LINE: 19
+----------------------------------------------------------------
+2018-09-17 10:11:05 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+CODE: echo $quote['title'];
+LINE: 36
+CODE: <input type="radio" name="shipping_method"
+LINE: 15
+LINE: 17
+LINE: 23
+LINE: 25
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+CODE: $_['text_yes']
+LINE: 19
+CODE: $_['text_yes']
+LINE: 19
+----------------------------------------------------------------
+2018-09-17 10:21:52 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+CODE: echo $quote['title'];
+LINE: 36
+CODE: <input type="radio" name="shipping_method"
+LINE: 15
+LINE: 17
+LINE: 23
+LINE: 25
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+CODE: $_['text_yes']
+LINE: 19
+CODE: $_['text_yes']
+LINE: 19
+----------------------------------------------------------------
+2018-09-17 10:45:15 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+2018-09-17 10:45:18 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+2018-09-17 10:45:57 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+2018-09-17 10:45:57 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+2018-09-17 10:46:24 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+2018-09-17 12:32:16 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Почта России
+FILE: catalog/view/theme/busina/template/checkout/shipping_method.tpl
+CODE: echo $quote['title'];
+LINE: 17
+CODE: <input type="radio" name="shipping_method"
+LINE: 13
+LINE: 15
+CODE: <?php echo $quote['text']; ?></label>
+NOT FOUND!
+FILE: admin/language/russian/russian.php
+CODE: $_['text_yes']
+LINE: 16
+FILE: admin/language/english/english.php
+CODE: $_['text_yes']
+LINE: 16
+----------------------------------------------------------------
+2018-09-17 16:26:54 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+2018-09-17 16:29:10 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+2018-09-18 10:26:43 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------
+2018-09-20 10:47:08 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Обмен с 1C
+FILE: admin/controller/common/menu.php
+CODE: $data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 145
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $modification; ?>"><?php echo $text_modification; ?></a></li>
+LINE: 28
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND!
+CODE: imagecopy($this->image, $watermark, $watermark_pos_x, $watermark_pos_y, 0, 0, 120, 40);
+NOT FOUND!
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 377
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 445
+CODE: $product_option_value_data[] = array(
+LINE: 465
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 470
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 517
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 88
+FILE: system/library/cart.php
+CODE: $price = $product_query->row['price'];
+LINE: 164
+CODE: public function getProducts() {
+LINE: 62
+CODE: if ($option_value_query->row['price_prefix'] == '+') {
+LINE: 87
+LINE: 132
+CODE: } elseif ($option_value_query->row['price_prefix'] == '-') {
+LINE: 89
+LINE: 134
+FILE: catalog/view/theme/busina/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND!
+CODE: <h2><?php echo $price; ?></h2>
+NOT FOUND!
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+NOT FOUND!
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+NOT FOUND!
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+NOT FOUND!
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+NOT FOUND!
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+NOT FOUND!
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 79
+CODE: $(document).ready(function() {
+NOT FOUND!
+CODE: $(document).ready(function() {
+NOT FOUND!
+----------------------------------------------------------------

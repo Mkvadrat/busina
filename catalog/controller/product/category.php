@@ -174,7 +174,13 @@ class ControllerProductCategory extends Controller {
 				if ($result['image']) {
 					$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
 				} else {
-					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+					$cat_image = $this->model_catalog_category->getImageCategory($result['category_id']);
+					
+					if(!empty($cat_image)){
+						$image = $this->model_tool_image->resize($cat_image, $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+					}else{
+						$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+					}
 				}
 				
 				$data['categories'][] = array(

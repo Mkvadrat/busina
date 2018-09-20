@@ -25,9 +25,9 @@ class ModelShippingFree extends Model {
 			$quote_data['free'] = array(
 				'code'         => 'free.free',
 				'title'        => $this->language->get('text_description'),
-				'cost'         => 0.00,
+				'cost'         => false,
 				'tax_class_id' => 0,
-				'text'         => $this->currency->format(0.00)
+				'text'         => false
 			);
 
 			$method_data = array(

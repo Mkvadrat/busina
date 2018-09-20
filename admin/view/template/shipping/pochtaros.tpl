@@ -478,9 +478,6 @@
         </div>
     </div>
 </div>
-
-<input type="hidden" name="<?php echo $name; ?>_license" size="50" value="<?php if (isset($pochtaros_license)) echo $pochtaros_license; ?>" >
-
 </form>
 </div>
 </div>

@@ -23,6 +23,11 @@ $(document).ready(function() {
 		$(".block-main-menu .main-menu").slideToggle();
 	});
 
+	$('.mob-catalog').on('click', function() {
+		$(this).next('ul.list-text-items').slideToggle('fast');
+		$(this).toggleClass('opened');
+	});
+
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
 	/*var owl = $(".carousel");

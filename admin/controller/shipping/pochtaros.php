@@ -528,14 +528,6 @@ class ControllerShippingPochtaros extends Controller {
 			$data[$this->name . '_payment'] = $this->config->get( $this->name . '_payment' );
 		}
 
-
-		if ($this->config->get( $this->name . '_license' )) {
-			$data[$this->name . '_license'] = $this->config->get( $this->name . '_license' );
-		}
-		else {
-			$data[$this->name . '_license'] = '';
-		}
-
 		$data['config_language_id'] = $this->config->get( 'config_language_id' );
 		$this->load->model( 'localisation/zone' );
 		$data['zones'] = $this->model_localisation_zone->getZonesByCountryId( 176 );

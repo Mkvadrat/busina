@@ -33,8 +33,6 @@ class ModelLocalisationZoneDv extends Model {
             	case 'Костромская область': $send[$key] = '156000'; break;
             	case 'Краснодарский край': $send[$key] = '352000'; break;
             	case 'Красноярский край': $send[$key] = '660000'; break;
-                //case 'Крым': $send[$key] = /*'295000'*/'160000'; break;
-                case 'Крым': $send[$key] = '295000'; break;
             	case 'Курганская область': $send[$key] = '640000'; break;
             	case 'Курская область': $send[$key] = '305000'; break;
             	case 'Ленинградская область': $send[$key] = '187000'; break;

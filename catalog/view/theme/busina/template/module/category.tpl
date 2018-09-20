@@ -1,3 +1,4 @@
+<button class="mob-catalog"><span>Показать</span><span class="opened">Скрыть</span> каталог</button>
 <ul class="list-text-items">
   <!-- FIRST LEVEL --> 
   <?php foreach ($all_categories as $category) { ?>

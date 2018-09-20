@@ -66,4 +66,10 @@ class ModelCatalogCategory extends Model {
 
 		return $query->row['total'];
 	}
+	
+	public function getImageCategory($category_id){
+		$query = $this->db->query("SELECT p.image FROM " . DB_PREFIX . "product AS p JOIN " . DB_PREFIX . "product_to_category AS ptc ON (p.product_id = ptc.product_id) AND ptc.category_id = '" . $category_id . "' LIMIT 1");
+		
+		return $query->row['image'];
+	}
 }
