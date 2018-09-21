@@ -96,7 +96,7 @@ class ControllerCommonHeader extends Controller {
 		$data['guarantees'] = $this->url->link('information/information&information_id=7', '', 'SSL');
 		$data['refund'] = $this->url->link('information/information&information_id=8', '', 'SSL');
 		$data['about'] = $this->url->link('information/information&information_id=9', '', 'SSL');
-		$data['catalog'] = $this->url->link('product/category&path=60', '', 'SSL');
+		$data['catalog'] = $this->url->link('product/catalog', '', 'SSL');
 		$data['payment_delivery'] = $this->url->link('information/information&information_id=10', '', 'SSL');
 		$data['wholesalers'] = $this->url->link('information/information&information_id=11', '', 'SSL');
 		$data['news'] = $this->url->link('information/news', '', 'SSL');

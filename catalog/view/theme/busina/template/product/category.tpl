@@ -26,7 +26,7 @@
                             <?php foreach ($categories as $category) { ?>
                             <li>
                                 <a href="<?php echo $category['href']; ?>">
-                                    <!--<img class="photo-product" src="<?php echo $category['image']; ?>" alt="">-->
+                                    <img class="photo-product" src="<?php echo $category['image']; ?>" alt="">
                                     <p class="product-name"><?php echo $category['name']; ?></p>
                                 </a>
                             </li>

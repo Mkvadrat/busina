@@ -217,7 +217,7 @@
                             </div>
                         </div>
                         <ul class="main-menu">
-                            <li><a href="<?php echo $home; ?>">Главная</a></li>
+                            <li><a href="<?php echo $catalog; ?>">Каталог</a></li>
                             <li><a href="<?php echo $payment_delivery; ?>">Оплата и доставка</a></li>
                             <li><a href="<?php echo $wholesalers; ?>">Оптовикам</a></li>
                             <li><a href="<?php echo $news; ?>">Скидки и акции</a></li>
