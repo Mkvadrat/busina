@@ -374,7 +374,7 @@ class ControllerProductSearch extends Controller {
 
 			$data['limits'] = array();
 
-			$limits = array_unique(array($this->config->get('config_product_limit'), 25, 50, 75, 100));
+			$limits = array_unique(array($this->config->get('config_product_limit'), 54, 102));
 
 			sort($limits);
 
